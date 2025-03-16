@@ -1,6 +1,6 @@
-import TimeEntryForm from './components/TimeEntryForm';
-import Calendar from './components/Calendar';
-import EffortGraph from './components/EffortGraph';
+import TimeEntryForm from "./components/TimeEntryForm";
+import Calendar from "./components/Calendar";
+import EffortGraph from "./components/EffortGraph";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           aktiviteter og benytter seg av verktøy som kan hjelpe deg med å
           strukturere hverdagen for å unngå at energiforbruket blir for høyt
           eller for lavt. Metoden kan brukes for:
-          <ul>
+          <ul className="list-disc list-inside">
             <li>
               Å finne en balanse mellom hva en klarer å utføre og hva en faktisk
               gjør
@@ -24,11 +24,12 @@ function App() {
           </ul>
         </p>
         <p>
-          Hentet fra{' '}
+          Hentet fra{" "}
           <a
+            className="text-blue-500 hover:underline"
             href="https://uni.oslomet.no/aktivitetskalkulator/wp-content/uploads/sites/376/2023/02/Aktivitetskalkulator-Informasjonsbrosjyre-ny-versjon.pdf"
             target="_blank"
-          >
+            rel="noopener noreferrer">
             Aktivitetskalkulator-Informasjonsbrosjyre
           </a>
         </p>
