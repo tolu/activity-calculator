@@ -1,6 +1,6 @@
 import TimeEntryForm from "./components/TimeEntryForm";
-import Calendar from "./components/Calendar";
 import EffortGraph from "./components/EffortGraph";
+import { TodayEntries } from "./components/TodayEntries";
 
 function App() {
   return (
@@ -15,14 +15,14 @@ function App() {
           aktiviteter og benytter seg av verktøy som kan hjelpe deg med å
           strukturere hverdagen for å unngå at energiforbruket blir for høyt
           eller for lavt. Metoden kan brukes for:
-          <ul className="list-disc list-inside">
-            <li>
-              Å finne en balanse mellom hva en klarer å utføre og hva en faktisk
-              gjør
-            </li>
-            <li>Å bygge opp evne til å tåle et høyere aktivitetsnivå</li>
-          </ul>
         </p>
+        <ul className="list-disc list-inside">
+          <li>
+            Å finne en balanse mellom hva en klarer å utføre og hva en faktisk
+            gjør
+          </li>
+          <li>Å bygge opp evne til å tåle et høyere aktivitetsnivå</li>
+        </ul>
         <p>
           Hentet fra{" "}
           <a
@@ -36,7 +36,8 @@ function App() {
       </details>
       <br />
       <TimeEntryForm />
-      <Calendar />
+      <TodayEntries />
+      {/* <Calendar /> */}
       <EffortGraph />
     </div>
   );
